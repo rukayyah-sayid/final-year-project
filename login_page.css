@@ -1,0 +1,142 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans&display=swap');
+
+.vh {
+  height: 100vh;
+}
+
+.font-12 {
+  font-family: 'DM Sans', sans-serif;
+  font-size: 12px;
+}
+
+.font-14 {
+  font-family: 'DM Sans', sans-serif;
+  font-size: 14px;
+}
+
+.font-16 {
+  font-family: 'DM Sans', sans-serif;
+  font-size: 16px;
+}
+
+.font-20 {
+  font-family: 'DM Sans', sans-serif;
+  font-size: 20px;
+}
+
+.font-30 {
+  font-family: 'DM Sans', sans-serif;
+  font-size: 30px;
+}
+
+.font-50 {
+  font-family: 'DM Sans', sans-serif;
+  font-size: 50px;
+}
+
+.peach-color {
+  color: #11145A;
+}
+
+.peach-bg {
+  background-color: #11145A;
+}
+
+input:focus {
+  border-color: #11145A !important;
+}
+
+.vh-100px {
+  margin: auto !important;
+  padding-top: 130px;
+}
+
+.msg {
+  color: red;
+  font-family: 'DM Sans', sans-serif;
+  font-size: 12px;
+  font-style: italic;
+}
+
+.msg1 {
+  color: red;
+  font-family: 'DM Sans', sans-serif;
+  font-size: 12px;
+  font-style: italic;
+}
+
+.msg2 {
+  color: red;
+  font-family: 'DM Sans', sans-serif;
+  font-size: 12px;
+  font-style: italic;
+}
+
+.msg3 {
+  color: red;
+  font-family: 'DM Sans', sans-serif;
+  font-size: 12px;
+  font-style: italic;
+}
+
+.msg4 {
+  color: red;
+  font-family: 'DM Sans', sans-serif;
+  font-size: 12px;
+  font-style: italic;
+}
+
+.msg5 {
+  color: red;
+  font-family: 'DM Sans', sans-serif;
+  font-size: 12px;
+  font-style: italic;
+}
+
+.msg6 {
+  color: red;
+  font-family: 'DM Sans', sans-serif;
+  font-size: 12px;
+  font-style: italic;
+}
+
+.msg7 {
+  color: red;
+  font-family: 'DM Sans', sans-serif;
+  font-size: 12px;
+  font-style: italic;
+}
+
+.msg8 {
+  color: red;
+  font-family: 'DM Sans', sans-serif;
+  font-size: 12px;
+  font-style: italic;
+}
+
+.msg9 {
+  color: red;
+  font-family: 'DM Sans', sans-serif;
+  font-size: 12px;
+  font-style: italic;
+}
+/* 
+.msg10 {
+  color: red;
+  font-family: 'DM Sans', sans-serif;
+  font-size: 12px;
+  font-style: italic;
+}
+
+.msg11 {
+  color: red;
+  font-family: 'DM Sans', sans-serif;
+  font-size: 12px;
+  font-style: italic;
+} */
+
+
+
+/* .pale-yellow {
+  color: #8CA9D3;
+} */

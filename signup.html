@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- font awesome cdn -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" rel="stylesheet">
+  <!-- bootstrap cdn -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <link rel="stylesheet" href="login_page.css">
+  <title>Signup</title>
+</head>
+<body>
+  <!-- header -->
+  <div class="col-lg-12 peach-bg pb-1"></div>
+  <!-- header end -->
+  <!-- heading -->
+  <div>
+    <p class="peach-color font-30 font-weight-bold text-center mt-5 ">SIGNUP</p>
+  </div>
+  <!-- heading end -->
+  <div class="container container-fluid">
+      <form action="GET" class="form-group" onsubmit="return formValidation()">
+        <div class="col-lg-6 float-left pl-5">
+        <div class="form-group">
+          <input type="text" class="form-control font-14 pt-3 pb-3" placeholder="Full Name" id="fullName" name="fullName">
+          <div class="msg"></div>
+        </div>
+        
+        <div class="form-group">
+          <input type="email" class="form-control font-14 pt-3 pb-3" placeholder="Email Address" id="emailAddress" name="emailAddress">
+          <div class="msg1"></div>
+        </div>
+
+        <div class="form-group">
+          <input type="tel" class="form-control font-14 pt-3 pb-3" placeholder="Phone Number" id="phone" name="phone">
+          <div class="msg2"></div>
+        </div>
+
+        <div class="form-group input-group">
+          <input type="password" id="myInput" class="form-control font-14 pt-3 pb-3" placeholder="Password"  autocomplete='chrome-off' >
+          <div class="input-group-append">
+            <span class="input-group-text">
+              <a href="#" class="toggle_hide_password">
+                <i class="fas fa-eye-slash peach-color" aria-hidden="true"></i>
+              </a>
+            </span>
+          </div>
+          <div class="msg10"></div>
+        </div>
+
+        <div class="form-group input-group">
+          <input type="password" id="myInput" class="form-control font-14 pt-3 pb-3" placeholder="Confirm Password"  autocomplete='chrome-off' >
+          <div class="input-group-append">
+            <span class="input-group-text">
+              <a href="#" class="toggle_hide_password">
+                <i class="fas fa-eye-slash peach-color" aria-hidden="true"></i>
+              </a>
+            </span>
+          </div>
+          <div class="msg11"></div>
+        </div>
+
+        <div class="form-group">
+          <input type="text" class="form-control font-14 pt-3 pb-3" placeholder="Session" id="session" name="session">
+          <div class="msg3"></div>
+        </div>
+        
+        <div class="form-group">
+          <input type="text" class="form-control font-14 pt-3 pb-3" placeholder="Department" id="dept" name="dept">
+          <div class="msg4"></div>
+        </div>
+      <!-- </form> -->
+    </div>
+
+
+    <div class="col-lg-6 float-right pr-5">
+      <!-- <form action="GET" class="form-group" onsubmit="return formValidation2()"> -->
+        <div class="form-group">
+          <select class="form-control font-14" style="height: 60px;" id="supervisor" name="supervisor">
+            <option value="type of project" disabled selected hidden>Name of Supervisor</option>
+            <option>Rukayya sayeed</option>
+            <option>Abdulaziz Abdurrahman Ayo</option>
+            <option>Fatima Aminu</option>
+          </select>
+          <div class="msg5"></div>
+        </div>
+
+        <div class="form-group">
+          <input type="text" class="form-control font-14 pt-3 pb-3" placeholder="Course of Study" id="course" name="course">
+          <div class="msg6"></div>
+        </div>
+
+        <div class="form-group">
+          <input type="text" class="form-control font-14 pt-3 pb-3" placeholder="Project Topic" id="topic" name="topic">
+          <div class="msg7"></div>
+        </div>
+
+          <div class="form-group">
+            <select class="form-control font-14"  style="height: 55px;" id="projectType" name="projectType">
+              <option value="type of project" disabled selected hidden>Type of Project...</option>
+              <option>Research</option>
+              <option>Software Development</option>
+              <option>Experiment</option>
+            </select>
+            <div class="msg5"></div>
+          </div>
+
+        <div class="form-group">
+          <textarea class="form-control font-14" placeholder="Write a short note explaining what your project is all about" rows="9" id="projectBrief" id="projectBrief"></textarea>
+          <div class="msg9"></div>
+        </div>
+
+        <div class="form-group">
+          <a href="#"><button type="submit" class="btn peach-bg text-white col-lg-12 rounded font-16 pt-2 pb-2">Create an Account</button></a>
+        </div>
+        <!-- <label for="register"></label>
+                <input type="submit" id="register" placeholder="register now"> -->
+      </form>
+    </div>
+    <!-- form end -->
+  </div>
+  
+</body>
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+<script text="javascript" src="formValidation.js"></script>
+</html>
