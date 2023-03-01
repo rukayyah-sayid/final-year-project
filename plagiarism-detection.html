@@ -27,7 +27,7 @@
             <a class="text-white pl-4" href="#">Home</a>
           </li>
           <li>
-            <a class="text-white pl-4" href="#">Plagiarism Detection Tool</a>
+            <a class="text-white pl-4" href="plagiarism-detection.html">Plagiarism Detection Tool</a>
           </li>
           <li>
             <a class="text-white pl-4">Chats</a>
@@ -42,6 +42,22 @@
     <div id="accordion" class="accordion">
       <p class="font-30 peach-color font-weight-bold pt-5">Plagiarism Detection Tool</p>
       <p class="font-16 text-dark">Upload the text or document you want to scan.</p>
+      <section id="pageContent" class="animate-bottom">
+        <div>
+          <form method="post" action="/result">
+            <div class="form-group">
+              <textarea class="form-control" name="query" type="text" rows="17"
+                placeholder="Enter the text to check plagiarism" required></textarea>
+            </div>
+            <div>
+              <button type="submit" class="btn peach-bg font-16 float-right" onclick="startLoader()"
+                style="color: white !important;">GENERATE REPORT</button>
+              <!-- <input type="file" id="docpicker" accept=".doc,.docx,.xml,application/msword" /> -->
+            </div>
+          </form>
+
+        </div>
+      </section>
     </div>
     <!-- main body end -->
   </div>
