@@ -1,5 +1,5 @@
 function formValidation(e) {
-  var fullName = document.getElementById("fullName").value;
+  function formValidation(e) {
   var message = document.querySelector(".msg");
   var emailAddress = document.getElementById("emailAddress").value;
   var message1 = document.querySelector(".msg1");

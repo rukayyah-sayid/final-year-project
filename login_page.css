@@ -120,23 +120,10 @@ input:focus {
   font-size: 12px;
   font-style: italic;
 }
-/* 
-.msg10 {
-  color: red;
-  font-family: 'DM Sans', sans-serif;
-  font-size: 12px;
-  font-style: italic;
+
+
+/* student profile */
+
+.table-input-size {
+  width: 5px !important;
 }
-
-.msg11 {
-  color: red;
-  font-family: 'DM Sans', sans-serif;
-  font-size: 12px;
-  font-style: italic;
-} */
-
-
-
-/* .pale-yellow {
-  color: #8CA9D3;
-} */
