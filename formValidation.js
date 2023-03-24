@@ -1,24 +1,24 @@
-function formValidation(e) {
+// function formValidation(e) {
   function formValidation(e) {
   var message = document.querySelector(".msg");
-  var emailAddress = document.getElementById("emailAddress").value;
+  var fullName = document.getElementById("fullName").value;
   var message1 = document.querySelector(".msg1");
-  var phoneNo = document.getElementById("phone").value;
+  var surName = document.getElementById("surName").value;
   var message2 = document.querySelector(".msg2");
-  var sessions = document.getElementById("session").value;
+  var lastName = document.getElementById("lastName").value;
   var message3 = document.querySelector(".msg3");
-  var department = document.getElementById("dept").value;
+  var emailAddress = document.getElementById("emailAddress").value;
   var message4 = document.querySelector(".msg4");
-  var supervisor = document.getElementById("supervisor").value;
+  var password = document.getElementById("password").value;
   var message5 = document.querySelector(".msg5");
-  var courseName = document.getElementById("course").value;
+  var cpassword = document.getElementById("cpassword").value;
   var message6 = document.querySelector(".msg6");
-  var projectTopic = document.getElementById("topic").value;
+  var dept = document.getElementById("dept").value;
   var message7 = document.querySelector(".msg7");
-  var projectType = document.getElementById("projectType").value;
+  var faculty = document.getElementById("faculty").value;
   var message8 = document.querySelector(".msg8");
-  var projectBrief = document.getElementById("projectBrief").value;
-  var message9 = document.querySelector(".msg9");
+  // var projectBrief = document.getElementById("faculty").value;
+  // var message9 = document.querySelector(".msg9");
 
   // var password = document.getElementById("password").value;
   // var message10 = document.querySelector(".msg10");
@@ -35,133 +35,142 @@ function formValidation(e) {
     message.innerHTML = "";
   }
 
-  if (emailAddress == "" || emailAddress == null || emailAddress.length < 1) {
-    message1.innerHTML = "Enter email address";
-    document.getElementById("emailAddress").classList.add('invalid');;
+  if (surName == "" || surName == null || surName.length < 1) {
+    message1.innerHTML = "Enter surname";
+    document.getElementById("surName").classList.add('invalid');;
   }
   else {
-    document.getElementById("emailAddress").classList.remove('invalid');
+    document.getElementById("surName").classList.remove('invalid');
     message1.innerHTML = "";
   }
 
-  if (phoneNo == "" || phoneNo == null || phoneNo.length != 11) {
-    message2.innerHTML = "Phone number should be 11 characters";
-    document.getElementById("phoneNo").classList.add('invalid');
+  if (lastName == "" || lastName == null || lastName.length < 1) {
+    message2.innerHTML = "Enter Last Name";
+    document.getElementById("lastName").classList.add('invalid');;
   }
   else {
-    document.getElementById("phoneNo").classList.remove('invalid');
+    document.getElementById("lastName").classList.remove('invalid');
     message2.innerHTML = "";
   }
 
-  if (sessions == null || sessions == "") {
+  // if (phoneNo == "" || phoneNo == null || phoneNo.length != 11) {
+  //   message2.innerHTML = "Phone number should be 11 characters";
+  //   document.getElementById("phoneNo").classList.add('invalid');
+  // }
+  // else {
+  //   document.getElementById("phoneNo").classList.remove('invalid');
+  //   message2.innerHTML = "";
+  // }
+
+  if (emailAddress == null || emailAddress == "") {
     message3.innerHTML = "This field is required";
-    document.getElementById("sessions").classList.add('invalid');
+    document.getElementById("emailAddress").classList.add('invalid');
   }
   else {
-    document.getElementById("sessions").classList.remove('invalid');
+    document.getElementById("emailAddress").classList.remove('invalid');
     message3.innerHTML = "";
   }
 
-  if (department == "" || department == null) {
+  if (password == "" || password == null) {
     message4.innerHTML = "Fill in your department name please";
-    document.getElementById("department").classList.add('invalid');
+    document.getElementById("password").classList.add('invalid');
   }
   else {
-    document.getElementById("department").classList.remove('invalid');
+    document.getElementById("password").classList.remove('invalid');
     message4.innerHTML = "";
   }
 
-  if (supervisor == "" || supervisor == null) {
+  if (cpassword == "" || cpassword == null) {
     message5.innerHTML = "Fill in your supervisor's name please";
-    document.getElementById("supervisor").classList.add('invalid');
+    document.getElementById("cpassword").classList.add('invalid');
   }
   else {
-    document.getElementById("supervisor").classList.remove('invalid');
+    document.getElementById("cpassword").classList.remove('invalid');
     message5.innerHTML = "";
   }
 
-  if (courseName == "" || courseName == null) {
+  if (dept == "" || dept == null) {
     message6.innerHTML = "Fill in the name of the course you are offering please";
-    document.getElementById("courseName").classList.add('invalid');
+    document.getElementById("dept").classList.add('invalid');
   }
   else {
     message6.innerHTML = "";
-    document.getElementById("courseName").classList.remove('invalid');
+    document.getElementById("dept").classList.remove('invalid');
   }
 
-  if (projectTopic == "" || projectTopic == null) {
+  if (faculty == "" || faculty == null) {
     message7.innerHTML = "Fill in your project topic please";
-    document.getElementById("projectTopic").classList.add('invalid');
+    document.getElementById("faculty").classList.add('invalid');
   }
   else {
     message7.innerHTML = "";
-    document.getElementById("projectTopic").classList.remove('invalid');
+    document.getElementById("faculty").classList.remove('invalid');
   }
 
-  if (projectType == "" || projectType == null) {
-    message8.innerHTML = "Fill in your project type please";
-    document.getElementById("projectType").classList.add('invalid');
-  }
-  else {
-    message8.innerHTML = "";
-    document.getElementById("projectType").classList.remove('invalid');
-  }
+  // if (projectType == "" || projectType == null) {
+  //   message8.innerHTML = "Fill in your project type please";
+  //   document.getElementById("projectType").classList.add('invalid');
+  // }
+  // else {
+  //   message8.innerHTML = "";
+  //   document.getElementById("projectType").classList.remove('invalid');
+  // }
 
-  if (projectBrief == "" || projectBrief == null) {
-    message9.innerHTML = "Give a descriotion of your project please";
-    document.getElementById("projectBrief").classList.add('invalid');
-  }
-  else {
-    message9.innerHTML = "";
-    document.getElementById("projectBrief").classList.remove('invalid');
-  }
+  // if (projectBrief == "" || projectBrief == null) {
+  //   message9.innerHTML = "Give a descriotion of your project please";
+  //   document.getElementById("projectBrief").classList.add('invalid');
+  // }
+  // else {
+  //   message9.innerHTML = "";
+  //   document.getElementById("projectBrief").classList.remove('invalid');
+  // }
 
 
-  if (supervisors == "Rukayya Sayeed" || supervisors != "Abdulaziz Abdurrahman Ayo" || supervisors != "Fatima Aminu") {
-    message5.innerHTML = "Fill in your supervisor's name please";
-    document.getElementById("supervisors").classList.add('invalid');
-  }
+  // if (supervisors == "Rukayya Sayeed" || supervisors != "Abdulaziz Abdurrahman Ayo" || supervisors != "Fatima Aminu") {
+  //   message5.innerHTML = "Fill in your supervisor's name please";
+  //   document.getElementById("supervisors").classList.add('invalid');
+  // }
 
-  else {
-    document.getElementById("supervisors").classList.remove('invalid');
-    message5.innerHTML = "";
-  }
+  // else {
+  //   document.getElementById("supervisors").classList.remove('invalid');
+  //   message5.innerHTML = "";
+  // }
 
-  if (course == "" || course == null) {
-    message6.innerHTML = "Fill in the name of the course you are offering please";
-    document.getElementById("course").classList.add('invalid');
-  }
-  else {
-    message6.innerHTML = "";
-    document.getElementById("course").classList.remove('invalid');
-  }
+  // if (course == "" || course == null) {
+  //   message6.innerHTML = "Fill in the name of the course you are offering please";
+  //   document.getElementById("course").classList.add('invalid');
+  // }
+  // else {
+  //   message6.innerHTML = "";
+  //   document.getElementById("course").classList.remove('invalid');
+  // }
 
-  if (topic == "" || topic == null) {
-    message7.innerHTML = "Fill in your project topic please";
-    document.getElementById("topic").classList.add('invalid');
-  }
-  else {
-    message7.innerHTML = "";
-    document.getElementById("topic").classList.remove('invalid');
-  }
+  // if (topic == "" || topic == null) {
+  //   message7.innerHTML = "Fill in your project topic please";
+  //   document.getElementById("topic").classList.add('invalid');
+  // }
+  // else {
+  //   message7.innerHTML = "";
+  //   document.getElementById("topic").classList.remove('invalid');
+  // }
 
-  if (projectType != "Type of Project...") {
-    message8.innerHTML = "Fill in your project type please";
-    document.getElementById("projectType").classList.add('invalid');
-  }
-  else {
-    message8.innerHTML = "";
-    document.getElementById("projectType").classList.remove('invalid');
-  }
+  // if (projectType != "Type of Project...") {
+  //   message8.innerHTML = "Fill in your project type please";
+  //   document.getElementById("projectType").classList.add('invalid');
+  // }
+  // else {
+  //   message8.innerHTML = "";
+  //   document.getElementById("projectType").classList.remove('invalid');
+  // }
 
-  if (projectBrief == "" || projectBrief == null) {
-    message9.innerHTML = "Give a descriotion of your project please";
-    document.getElementById("projectBrief").classList.add('invalid');
-  }
-  else {
-    message9.innerHTML = "";
-    document.getElementById("projectBrief").classList.remove('invalid');
-  }
+  // if (projectBrief == "" || projectBrief == null) {
+  //   message9.innerHTML = "Give a descriotion of your project please";
+  //   document.getElementById("projectBrief").classList.add('invalid');
+  // }
+  // else {
+  //   message9.innerHTML = "";
+  //   document.getElementById("projectBrief").classList.remove('invalid');
+  // }
 
 
   // if (confirmPassword == "" || confirmPassword == null) {
@@ -198,4 +207,5 @@ function formValidation(e) {
   //   document.getElementById("password").classList.remove('invalid');
   //   document.getElementById("cpassword").classList.remove('invalid');
   //   }
-  }
+}
+// }

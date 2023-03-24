@@ -40,41 +40,32 @@
 
     <!-- main body -->
     <div class="accordion" id="accordion">
-      <p class="font-30 peach-color font-weight-bold pt-5">UG17CSC1007 - Mu'azzam Muhtari Dangana </p>
-      <p class="font-16 text-dark">Mark according to chapters and get the cumulative score here.</p>
+      <p class="font-30 peach-color font-weight-bold pt-5">Profile </p>
       <table class="table table-hover">
-        <thead>
-          <tr class="font-20">
-            <!-- <th scope="col">S/N</th> -->
-            <th scope="col">Chapters</th>
-            <th scope="col">Scores</th>
-          </tr>
-        </thead>
         <tbody class="font-14">
           <tr>
-            <td>Chapter 1</td>
-            <td><input type="number" input onblur="findTotal()" name="qty" id="qty1" style="width: 45px !important;"></td>
+            <td>Full Name</td>
+            <td class="font-16">Muázzam Muhtari Dangana</td>
           </tr>
           <tr>
-            <td>Chapter 2</td>
-            <td><input type="number" input onblur="findTotal()" name="qty" id="qty2" style="width: 45px !important;"></td>
+            <td>Registeration Number</td>
+            <td class="font-16">UG17CSC1047</td>
           </tr>
           <tr>
-            <td>Chapter 3</td>
-            <td><input type="number" input onblur="findTotal()" name="qty" id="qty2" style="width: 45px !important;"></td>
-
+            <td>Session</td>
+            <td class="font-16">2017/2018</td>
           </tr>
           <tr>
-            <td>Chapter 4</td>
-            <td><input type="number" input onblur="findTotal()" name="qty" id="qty2" style="width: 45px !important;"></td>
+            <td>Project Title</td>
+            <td class="font-16">Transportation System</td>
           </tr>
           <tr>
-            <td>Chapter 5</td>
-            <td><input type="number" input onblur="findTotal()" name="qty" id="qty2" style="width: 45px !important;"></td>
+            <td>Email Address</td>
+            <td class="font-16">muazzamdangana@gmail.com</td>
           </tr>
           <tr>
-            <th>Cumulative</th>
-            <td><input type="number" name="total" id="total" style="width: 45px !important;"></td>
+            <td>Phone Number</td>
+            <td class="font-16">08032212749</td>
           </tr>
         </tbody>
       </table>
@@ -87,16 +78,4 @@
   integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
   integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-  <script type="text/javascript">
-    function findTotal(){
-        var arr = document.getElementsByName('qty');
-        var tot=0;
-        for(var i=0;i<arr.length;i++){
-            if(parseInt(arr[i].value))
-                tot += parseInt(arr[i].value);
-        }
-        document.getElementById('total').value = tot;
-    }
-    
-        </script>
 </html>

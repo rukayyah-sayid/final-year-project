@@ -43,7 +43,7 @@
 }
 
 #sidebar ul li a:hover {
-  color: #FEBD2F !important;
+  color: #11145A !important;
   background: #FFF;
   padding-top: 15px;
   padding-bottom: 15px;
@@ -52,7 +52,7 @@
 }
 
 #sidebar ul li:active>a {
-  color: #FEBD2F;
+  color: #11145A;
   background: #fff;
   text-decoration: none !important;
 }
@@ -88,14 +88,14 @@ ul.CTAs a {
 }
 
 a.download {
-  background: #FEBD2F;
+  /* background: #FEBD2F; */
   color: #11145A;
 }
 
 a.article,
 a.article:hover {
   background: #11145A !important;
-  color: #FEBD2F !important;
+  color: #11145A !important;
 }
 
 
@@ -255,7 +255,7 @@ overflow: auto; margin-top: 16px;
 }
 #feedback a:hover {
 	background:#fff;
-  color: #FEBD2F ;
+  color: #11145A ;
 }
 
 /* enquiry form */	
@@ -288,7 +288,7 @@ overflow: auto; margin-top: 16px;
 
 #quickenquire  input[type=submit]:hover {
     background-color: #fff;
-    color: #FEBD2F;
+    color: #11145A;
     font-weight: bold;
-    border: 1px solid #FEBD2F;
+    border: 1px solid #11145A;
 }

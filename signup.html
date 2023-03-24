@@ -20,22 +20,27 @@
     <p class="peach-color font-30 font-weight-bold text-center mt-5 ">SIGNUP</p>
   </div>
   <!-- heading end -->
-  <div class="container container-fluid">
+  <div class="container container-fluid justify-content-center">
       <form action="GET" class="form-group" onsubmit="return formValidation()">
         <div class="col-lg-6 float-left pl-5">
         <div class="form-group">
-          <input type="text" class="form-control font-14 pt-3 pb-3" placeholder="Full Name" id="fullName" name="fullName">
+          <input type="text" class="form-control font-14 pt-3 pb-3" placeholder="First Name" id="fullName" name="fullName">
           <div class="msg"></div>
         </div>
-        
+
         <div class="form-group">
-          <input type="email" class="form-control font-14 pt-3 pb-3" placeholder="Email Address" id="emailAddress" name="emailAddress">
+          <input type="text" class="form-control font-14 pt-3 pb-3" placeholder="Surname" id="surName" name="surName">
           <div class="msg1"></div>
         </div>
 
         <div class="form-group">
-          <input type="tel" class="form-control font-14 pt-3 pb-3" placeholder="Phone Number" id="phone" name="phone">
+          <input type="text" class="form-control font-14 pt-3 pb-3" placeholder="Last Name" id="lastName" name="lastName">
           <div class="msg2"></div>
+        </div>
+        
+        <div class="form-group">
+          <input type="email" class="form-control font-14 pt-3 pb-3" placeholder="Email Address" id="emailAddress" name="emailAddress">
+          <div class="msg3"></div>
         </div>
 
         <div class="form-group input-group">
@@ -47,9 +52,9 @@
               </a>
             </span>
           </div>
-          <div class="msg10"></div>
+          <div class="msg4"></div>
         </div>
-
+  
         <div class="form-group input-group">
           <input type="password" id="myInput" class="form-control font-14 pt-3 pb-3" placeholder="Confirm Password"  autocomplete='chrome-off' >
           <div class="input-group-append">
@@ -59,64 +64,26 @@
               </a>
             </span>
           </div>
-          <div class="msg11"></div>
+          <div class="msg5"></div>
         </div>
-
-        <div class="form-group">
-          <input type="text" class="form-control font-14 pt-3 pb-3" placeholder="Session" id="session" name="session">
-          <div class="msg3"></div>
-        </div>
-        
-        <div class="form-group">
-          <input type="text" class="form-control font-14 pt-3 pb-3" placeholder="Department" id="dept" name="dept">
-          <div class="msg4"></div>
-        </div>
-      <!-- </form> -->
     </div>
 
 
     <div class="col-lg-6 float-right pr-5">
-      <!-- <form action="GET" class="form-group" onsubmit="return formValidation2()"> -->
-        <div class="form-group">
-          <select class="form-control font-14" style="height: 60px;" id="supervisor" name="supervisor">
-            <option value="type of project" disabled selected hidden>Name of Supervisor</option>
-            <option>Rukayya sayeed</option>
-            <option>Abdulaziz Abdurrahman Ayo</option>
-            <option>Fatima Aminu</option>
-          </select>
-          <div class="msg5"></div>
-        </div>
+      
+      <div class="form-group">
+        <input type="text" class="form-control font-14 pt-3 pb-3" placeholder="Department" id="dept" name="dept">
+        <div class="msg6"></div>
+      </div>
 
-        <div class="form-group">
-          <input type="text" class="form-control font-14 pt-3 pb-3" placeholder="Course of Study" id="course" name="course">
-          <div class="msg6"></div>
-        </div>
+      <div class="form-group">
+        <input type="text" class="form-control font-14 pt-3 pb-3" placeholder="Faculty" id="dept" name="dept">
+        <div class="msg7"></div>
+      </div>
 
-        <div class="form-group">
-          <input type="text" class="form-control font-14 pt-3 pb-3" placeholder="Project Topic" id="topic" name="topic">
-          <div class="msg7"></div>
-        </div>
-
-          <div class="form-group">
-            <select class="form-control font-14"  style="height: 55px;" id="projectType" name="projectType">
-              <option value="type of project" disabled selected hidden>Type of Project...</option>
-              <option>Research</option>
-              <option>Software Development</option>
-              <option>Experiment</option>
-            </select>
-            <div class="msg5"></div>
-          </div>
-
-        <div class="form-group">
-          <textarea class="form-control font-14" placeholder="Write a short note explaining what your project is all about" rows="9" id="projectBrief" id="projectBrief"></textarea>
-          <div class="msg9"></div>
-        </div>
-
-        <div class="form-group">
-          <a href="#"><button type="submit" class="btn peach-bg text-white col-lg-12 rounded font-16 pt-2 pb-2">Create an Account</button></a>
-        </div>
-        <!-- <label for="register"></label>
-                <input type="submit" id="register" placeholder="register now"> -->
+      <div class="form-group">
+        <a href="#"><button type="" class="btn peach-bg text-white col-lg-12 rounded font-16 pt-2 pb-2">Create an Account</button></a>
+      </div>
       </form>
     </div>
     <!-- form end -->
