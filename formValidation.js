@@ -9,14 +9,14 @@
   var message3 = document.querySelector(".msg3");
   var emailAddress = document.getElementById("emailAddress").value;
   var message4 = document.querySelector(".msg4");
-  var password = document.getElementById("password").value;
+  var password = document.getElementById("myInput").value;
   var message5 = document.querySelector(".msg5");
-  var cpassword = document.getElementById("cpassword").value;
-  var message6 = document.querySelector(".msg6");
+  var cpassword = document.getElementById("myInput1").value;
+  var message6 = document.querySelector(".msg5");
   var dept = document.getElementById("dept").value;
-  var message7 = document.querySelector(".msg7");
+  var message7 = document.querySelector(".msg6");
   var faculty = document.getElementById("faculty").value;
-  var message8 = document.querySelector(".msg8");
+  // var message8 = document.querySelector(".msg7");
   // var projectBrief = document.getElementById("faculty").value;
   // var message9 = document.querySelector(".msg9");
 

@@ -26,15 +26,15 @@
       </div>
       <!-- heading end -->
       <!-- form div -->
-      <form class="form-signin col-md-8 mx-auto">
+      <form class="form-signin col-md-8 mx-auto" form action="" onSubmit="return testing()">
         <div class="form-group">
           <input type="email" id="inputEmail" class="form-control font-14" placeholder="Email Address"
-            style="height: 50px;" required >
+            style="height: 50px;"  >
             <div class="msg"></div>
         </div>
         <div class="form-group input-group">
           <input type="password" id="myInput" class="form-control font-14" placeholder="Password"
-            autocomplete='chrome-off' style="height: 50px;" required >
+            autocomplete='chrome-off' style="height: 50px;"  >
           <div class="input-group-append">
             <span class="input-group-text">
               <a href="#" class="toggle_hide_password">
@@ -119,7 +119,7 @@
 
 
   if(emailAddressLogin == null || emailAddressLogin=="" || emailAddressLogin.length < 1) {
-      message.innerHTML = "Your name is required";
+      message.innerHTML = "Your username is required";
       document.getElementById("emailAddressLogin").classList.add('invalid');
       // return false;
   } 
@@ -129,7 +129,7 @@
   }
 
   if(passwordd=="" || passwordd==null || passwordd.length < 1){
-      message1.innerHTML = "Enter email address";
+      message1.innerHTML = "Your password is required";
       document.getElementById("passwordd").classList.add('invalid');
   }
   else{
